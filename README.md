@@ -1,4 +1,5 @@
-![Screenshot of the App](/usecase.jpg)
+
+![usecase](https://github.com/user-attachments/assets/f25b5f79-1d7e-434c-81b7-a12811f6e74c)
 
 # Aki: 귀여운 애니메이션 소녀 챗봇
 
