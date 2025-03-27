@@ -135,6 +135,11 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
 * **Ollama 실행되지 않음:** `ollama serve` 명령 실행 여부 확인
 * **Ollama 모델 없음:** `ollama pull gemma3` 명령 실행 여부 확인
 
+## 참고 사이트
+
+* Coding an Anime Chatbot: A Journey with LLaMA 3 [TTS + Anime Model]
+* https://youtu.be/oCFm-rXI6HU?si=VHvYq3sUhe4rfh_j
+
 ## 라이선스
 
 MIT 라이선스를 따릅니다. 자세한 사항은 LICENSE 파일을 참고하세요.
