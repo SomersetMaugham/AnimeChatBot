@@ -1,0 +1,6 @@
+flask[async]
+openai
+edge-tts
+pydub
+markdown2
+coqui-tts
