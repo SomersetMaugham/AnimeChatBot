@@ -1,4 +1,5 @@
-
+![usecase](https://github.com/user-attachments/assets/282bae98-a7f2-4887-b3c9-dc1046093265)
+![Uploa[Uploading app.py…]()ding usecase.JPG…]()
 
 # Aki: 귀여운 애니메이션 소녀 챗봇
 
