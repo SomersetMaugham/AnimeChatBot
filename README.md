@@ -70,8 +70,8 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
 
 1. Git 저장소 클론:
     ```bash
-    git clone <YOUR_REPOSITORY_URL>
-    cd <YOUR_REPOSITORY_DIRECTORY>
+    git clone https://github.com/SomersetMaugham/AnimeChatBot.git
+    cd animechatbot
     ```
 2. 패키지 설치:
     ```bash
