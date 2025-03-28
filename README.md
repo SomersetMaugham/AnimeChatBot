@@ -107,7 +107,7 @@ English version: [README_en.md](README_en.md)
 
 * **모델 로딩 오류:** 인터넷 연결 상태와 모델 이름 확인
 * **Ollama 실행되지 않음:** `ollama serve` 명령 실행 여부 확인
-* **Ollama 모델 없음:** `ollama pull gemma3` 명령 실행 여부 확인
+* **Ollama 모델 없음:** `ollama pull gemma3:latest` 명령 실행 여부 확인
 
 ## 참고 사이트
 
