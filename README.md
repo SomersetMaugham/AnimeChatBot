@@ -115,10 +115,11 @@ English version: [README_en.md](README_en.md)
 
 * Coding an Anime Chatbot: A Journey with LLaMA 3 [TTS + Anime Model]
 * https://youtu.be/oCFm-rXI6HU?si=VHvYq3sUhe4rfh_j
+
 * 2D Animation Character made by
-  B站@樱井檬
-  https://space.bilibili.com/4873028?spm_id_from=333.337.0.0
-  Twitter@sakurai_mon
+*  B站@樱井檬
+*  https://space.bilibili.com/4873028?spm_id_from=333.337.0.0
+*  Twitter@sakurai_mon
 
 ## 라이선스
 상업적인 사용은 금지합니다. 애니메이션 캐릭터의 저작권 및 모든 권리는 캐릭터 제작에게 있습니다.
