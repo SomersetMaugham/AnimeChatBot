@@ -1,17 +1,16 @@
 English version: [README_en.md](README_en.md)
 
-# Aki: 귀여운 애니메이션 챗봇
+# MO: 귀여운 애니메이션 챗봇
 
-Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 경험을 제공하는 재미있는 인터랙티브 챗봇입니다. 사용자를 살짝 놀리기도 하며, 독특한 개성을 통해 대화에 생동감을 더합니다. 이 프로젝트는 OpenAI 언어 모델, edge-tts 또는 coqui-tts 음성 합성 기술, Flask 기반 웹 인터페이스 등을 조합하여 구현되었습니다.
+애니메이션 소녀와 대화하는 듯한 경험을 제공하는 재미있는 인터랙티브 챗봇입니다. 이 프로젝트는 Gemma 언어 모델, edge-tts(또는 coqui-tts) 음성 합성 기술, Flask 기반 웹 인터페이스 등을 조합하여 구현되었습니다.
 
 ## 주요 기능
 
-* **인터랙티브 채팅:** Aki와 동적인 대화를 나눌 수 있습니다.
-* **애니메 소녀 페르소나:** 귀엽고 장난기 많은 애니메 캐릭터로서의 Aki.
-* **음성 합성:** Aki의 응답을 음성으로 들을 수 있습니다 (Edge TTS 또는 Coqui TTS 사용).
+* **인터랙티브 채팅:** MO와 동적인 대화를 나눌 수 있습니다.
+* **음성 합성:** MO의 응답을 음성으로 들을 수 있습니다 (Edge TTS 사용).
 * **마크다운 지원:** 응답은 마크다운 형식으로 보기 쉽게 출력됩니다.
 * **대화 기록 유지:** 최근 대화를 기억하여 자연스러운 이어말하기가 가능합니다.
-* **사용자 맞춤화:** `system prompt`를 수정하여 Aki의 성격과 행동을 쉽게 바꿀 수 있습니다.
+* **사용자 맞춤화:** `system prompt`를 수정하여 MO의 성격과 행동을 쉽게 바꿀 수 있습니다.
 * **로컬 LLM 지원:** Ollama를 통해 로컬 LLM을 사용할 수 있습니다.
 
 ## 사용 기술
@@ -42,28 +41,11 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
 1. [https://www.anaconda.com/](https://www.anaconda.com/)에서 conda 설치
 2. 새 환경 생성:
     ```bash
-    conda create --name aki-chatbot python=3.10
+    conda create -n chatbot python=3.11
     ```
 3. 환경 활성화:
     ```bash
-    conda activate aki-chatbot
-    ```
-
-#### 2. `pyenv`와 `venv` 사용 시
-
-1. `pyenv` 설치: https://github.com/pyenv/pyenv
-2. Python 버전 설치:
-    ```bash
-    pyenv install 3.10.13
-    ```
-3. 가상 환경 생성:
-    ```bash
-    python3 -m venv .venv
-    ```
-4. 가상 환경 활성화:
-    ```bash
-    source .venv/bin/activate  # (Linux/macOS)
-    .venv\Scripts\ctivate  # (Windows)
+    conda activate chatbot
     ```
 
 ### 의존성 설치
@@ -96,7 +78,7 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
     * 터미널에서 다음 실행:
         ```bash
         ollama serve
-        ollama pull gemma3
+        ollama pull gemma3:latest
         ```
 2. **TTS 엔진:**
     * **Edge TTS (기본):** 별도 설정 없음.
@@ -108,20 +90,18 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
 
 1. 가상 환경 활성화:
     ```bash
-    conda activate aki-chatbot  # conda 사용 시
-    source .venv/bin/activate  # Linux/macOS
-    .venv\Scripts\ctivate  # Windows
+    conda activate chatbot  # conda 사용 시
     ```
 2. Flask 앱 실행:
     ```bash
     python app.py
     ```
 3. 웹 브라우저에서 접속: `http://127.0.0.1:5000/`
-4. Aki와 대화 시작!
+4. MO와 대화 시작!
 
 ## 사용자 정의
 
-* `app.py`의 `system_prompt`를 수정해 Aki의 성격과 말투 변경 가능
+* `app.py`의 `system_prompt`를 수정해 MO의 성격과 말투 변경 가능
 
 ## 문제 해결
 
