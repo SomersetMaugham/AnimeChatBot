@@ -67,7 +67,7 @@ window.onload = function () {
           if (reversedData[i].role === 'user') {
             writeLine(`<span>User</span><br> ${reversedData[i].content}`, 'primary');
           } else {
-            writeLine(`<span>AKI</span><br> ${reversedData[i].content}`, 'secondary');
+            writeLine(`<span>MO</span><br> ${reversedData[i].content}`, 'secondary');
           }
         }
       })
