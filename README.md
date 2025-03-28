@@ -80,11 +80,11 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
     pip install -r requirements.txt
     ```
 3. PyTorch 설치:
-    - GPU 없이 (Windows) 또는 macOS:
+    - Nvidia GPU가 없을 때
     ```bash
     pip install torch torchvision torchaudio
     ```
-    - GPU 사용 시 (Windows):
+    - Nvidia GPU가 있을 때
     ```bash
     pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
     ```
