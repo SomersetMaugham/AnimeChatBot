@@ -62,7 +62,7 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
 4. 가상 환경 활성화:
     ```bash
     source .venv/bin/activate  # (Linux/macOS)
-    .venv\Scriptsctivate  # (Windows)
+    .venv\Scripts\ctivate      # (Windows)
     ```
 
 ### 의존성 설치
@@ -111,8 +111,8 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
 1. 가상 환경 활성화:
     ```bash
     conda activate aki-chatbot  # conda 사용 시
-    source .venv/bin/activate  # Linux/macOS
-    .venv\Scriptsctivate  # Windows
+    source .venv/bin/activate   # Linux/macOS
+    .venv\Scripts\ctivate       # Windows
     ```
 2. Flask 앱 실행:
     ```bash
