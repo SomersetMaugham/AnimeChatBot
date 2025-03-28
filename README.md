@@ -96,13 +96,8 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
         ollama serve
         ollama pull gemma3
         ```
-
 2. **TTS 엔진:**
     * **Edge TTS (기본):** 별도 설정 없음.
-    * **Coqui TTS 사용 시:**
-        * `pip install TTS`로 설치
-        * `xtts_v2` 모델이 없으면 자동 다운로드
-        * 다른 모델 사용 시, `app.py`와 `reserved.py`에서 `type_tts`를 `coqui`로 변경하고 모델 이름도 수정
 
 3. **음성 파일:**
     * Coqui-tts를 사용할 경우, `voice` 폴더를 만들고 `voice.wav` 파일을 넣어야 합니다.
@@ -125,8 +120,6 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
 ## 사용자 정의
 
 * `app.py`의 `system_prompt`를 수정해 Aki의 성격과 말투 변경 가능
-* `app.py` 및 `reserved.py`의 `type_tts`로 음성 합성 엔진 전환 가능
-* Coqui TTS 모델 이름도 위 파일에서 수정 가능
 
 ## 문제 해결
 
