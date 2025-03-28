@@ -90,7 +90,7 @@ Aki는 귀엽고 장난기 많은 애니메이션 소녀와 대화하는 듯한 
 ### 설정
 
 1. **Ollama:**
-    * (https://ollama.com/)에서 Ollama 설치
+    * [ollama](https://ollama.com) 에서 Ollama 설치
     * 터미널에서 다음 실행:
         ```bash
         ollama serve
