@@ -134,7 +134,7 @@ Using a virtual environment is highly recommended to avoid conflicts with other 
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+
 
 ## Contributing
 
