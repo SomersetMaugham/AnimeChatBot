@@ -78,6 +78,8 @@ English version: [README_en.md](README_en.md)
     * 터미널에서 다음 실행:
         ```bash
         ollama serve
+        ```
+        ```bash
         ollama pull gemma3:latest
         ```
 2. **TTS 엔진:**
