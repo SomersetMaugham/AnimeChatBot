@@ -1,4 +1,5 @@
-# Aki: A Cute Anime Girl Chatbot
+한국어 버전: [README_kr.md](README_kr.md)
+# Aki: A Cute Anime Chatbot
 
 Aki is a fun and interactive chatbot designed to simulate a conversation with a cute anime girl. She's programmed to be playful and occasionally tease the user, adding a unique personality to the interaction. This project utilizes a combination of technologies, including OpenAI's language models, edge-tts or coqui-tts for voice synthesis, and a Flask-based web interface.
 
