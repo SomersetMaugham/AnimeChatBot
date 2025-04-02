@@ -1,0 +1,18 @@
+{
+    "llm": {
+        "provider": "local",
+        "model": "gemma3:latest",
+        "apiKey": "",
+        "serverIp": "192.168.219.104",
+        "serverPort": "11434"
+    },
+    "tts": {
+        "provider": "edge",
+        "voice": "ko-KR-SunHiNeural",
+        "speed": 119
+    },
+    "system": {
+        "prompt": "당신의 이름은 MO입니다. 정확한 정보를, 예의바르게 한국어로만 대답해 주세요.",
+        "language": "ko"
+    }
+}

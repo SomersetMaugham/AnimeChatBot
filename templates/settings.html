@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/settings.css') }}">
+    <meta charset="UTF-8">
+    <title>설정</title>
+</head>
+<body>
+    <!-- 설정 페이지 -->
+    <div id="settings-container" class="settings-container">
+        <form id="settingsForm">
+            <div class="settings-header">
+                <h2><i class="settings-icon"></i> Settings</h2>
+                <button id="close-settings" class="close-settings">×</button>
+            </div>
+            
+            <div class="settings-content">
+                <!-- LLM 설정 섹션 -->
+                <div class="settings-section">
+                    <h3 class="section-title">LLM Settings</h3>
+                    
+                    <!-- LLM Provider와 Model을 가로로 배치 -->
+                    <div class="settings-row settings-row-flex">
+                        <div class="settings-column">
+                            <label for="llm-provider">LLM Provider</label>
+                            <div class="select-wrapper">
+                                <select id="llm-provider" class="settings-select">
+                                    <option value="anthropic">Anthropic</option>
+                                    <option value="chatgpt">ChatGPT</option>
+                                    <option value="deepseek">DeepSeek</option>
+                                    <option value="gemini">Gemini</option>
+                                    <option value="local" selected>Local Server</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="settings-column">
+                            <label for="llm-model">LLM Model</label>
+                            <div class="select-wrapper">
+                                <select id="llm-model" class="settings-select">
+                                    <option value="claude-3-7-sonnet-latest">Claude 3.7 Sonnet</option>
+                                    <option value="claude-3-7-haiku-latest">Claude 3.7 Haiku</option>
+                                    <option value="gpt-4o">GPT-4o</option>
+                                    <option value="o1">GPT-o1</option>
+                                    <option value="o3-mini">GPT-o3 mini</option>
+                                    <option value="deepseek-chat">DeepSeek Chat</option>
+                                    <option value="gemini-2.5-pro-exp-03-25">Gemini 2.5 Pro</option>
+                                    <option value="gemini-2.0-flash">Gemini 2.0 Flash</option>
+                                    <option value="gemini-2.0-flash-lite">Gemini 2.0 Flash-Lite</option>
+                                    <option value="gemma3:latest">Gemma 3</option>                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 로컬 서버 설정 (기본적으로 숨겨져 있음) -->
+                    <div id="local-server-settings" class="settings-row" style="display: none;">
+                        <div class="settings-row-flex">
+                            <div class="settings-column">
+                                <label for="server-ip">Server IP Address</label>
+                                <input type="text" id="server-ip" class="settings-input" value="127.0.0.1" placeholder="예: 127.0.0.1">
+                            </div>
+                            <div class="settings-column">
+                                <label for="server-port">Port</label>
+                                <input type="text" id="server-port" class="settings-input" value="11434" placeholder="예: 11434">
+                            </div>
+                        </div>
+                        <p class="help-text">로컬 LLM 서버의 IP 주소와 포트를 입력하세요. Ollama의 기본 포트는 11434입니다.</p>
+                    </div>
+                    
+                    <div class="settings-row">
+                        <div class="api-key-container">
+                            <label for="api-key">
+                                <span class="check-icon"></span> API Key
+                            </label>
+                            <input type="password" id="api-key" class="settings-input" value="••••••••••••••">
+                        </div>
+                    </div>
+                    
+                    <div class="settings-row">
+                        <p class="help-text">Don't know your API key? <a href="#" class="help-link">Click here for instructions</a></p>
+                    </div>
+                </div>
+                
+                <!-- TTS 설정 섹션 -->
+                <div class="settings-section">
+                    <h3 class="section-title">TTS Settings</h3>
+                    
+                    <!-- TTS Provider와 Voice를 가로로 배치 -->
+                    <div class="settings-row settings-row-flex">
+                        <div class="settings-column">
+                            <label for="tts-provider">TTS Provider</label>
+                            <div class="select-wrapper">
+                                <select id="tts-provider" class="settings-select">
+                                    <option value="edge" selected>Edge TTS</option>
+                                    <option value="coqui">Coqui TTS</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                     
+                        <div class="settings-column">
+                            <label for="tts-voice">Voice</label>
+                            <div class="select-wrapper">
+                                <select id="tts-voice" class="settings-select">
+                                    <option value="en-IE-EmilyNeural">미국 여성 에밀리</option>
+                                    <option value="en-US-GuyNeural">미국 남성 가이</option>
+                                    <option value="ko-KR-SunHiNeural" selected>한국 여성 선희</option>
+                                    <option value="ko-KR-InJoonNeural">한국 남성 인준</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-row">
+                        <label for="voice-speed">Voice Speed</label>
+                        <div class="slider-container">
+                            <input type="range" min="50" max="200" value="110" class="slider" id="voice-speed">
+                            <span class="slider-value">+10%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-row">
+                        <button id="test-voice" class="test-button">Test Voice</button>
+                    </div>
+                </div>
+                
+                <!-- 시스템 설정 섹션 -->
+                <div class="settings-section">
+                    <h3 class="section-title">System Settings</h3>
+                    
+                    <div class="settings-row">
+                        <label for="system-prompt">System Prompt</label>
+                        <textarea id="system-prompt" class="settings-textarea">You are named Aki. Pretend you're my cute anime assistant. Please respond simple and politely. Do NOT USE INTERJECTION!</textarea>
+                    </div>
+                    
+                    <!-- 언어 선택과 Clear History 버튼을 가로로 배치 -->
+                    <div class="settings-row settings-row-flex">
+                        <div class="settings-column">
+                            <label for="language">Language</label>
+                            <div class="select-wrapper">
+                                <select id="language" class="settings-select">
+                                    <option value="en" selected>English</option>
+                                    <option value="ko">한국어</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="settings-column text-right">
+                            <label>&nbsp;</label> <!-- 빈 레이블로 높이 맞춤 -->
+                            <div>
+                                <button id="clear-history" class="danger-button">Clear Chat History</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="settings-footer">
+                <button id="reset-defaults" class="reset-button">Reset to defaults</button>
+                <button id="cancel-settings" class="cancel-button">Cancel</button>
+                <button id="save-settings" class="save-button">Save Changes</button>
+            </div>
+        </form>    
+    </div>
+
+    <script src="{{ url_for('static', filename='js/settings.js') }}"></script>
+</body>
+</html>

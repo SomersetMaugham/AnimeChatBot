@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/settings.css') }}">
+    <!-- Load Cubism and PixiJS -->
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+
+    <!-- if support for both Cubism 2.1 and 4 -->
+    <script src="https://cdn.jsdelivr.net/gh/RaSan147/pixi-live2d-display@v0.5.0-ls-7/dist/index.min.js"></script>
+
+    <!-- if only Cubism 2.1 support-->
+    <script src="https://cdn.jsdelivr.net/gh/RaSan147/pixi-live2d-display@v0.5.0-ls-7/dist/cubism2.min.js"></script>
+
+    <!-- if only Cubism 4 support-->
+    <script src="https://cdn.jsdelivr.net/gh/RaSan147/pixi-live2d-display@v0.5.0-ls-7/dist/cubism4.min.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="canvas_container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <h1>JUST CHAT</h1>
+    <div class="chat">
+        <div class="messages">
+            <ul class="message-list">
+            </ul>
+            <div class="message-input">
+                <input type="text" placeholder="Type your message..." />
+                <button type="button" class="btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- 설정 트리거 버튼 -->
+    <div class="settings-trigger">
+        <div class="settings-trigger-icon"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/settings.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+static/models/10an/
+static/models/haru/
+static/models/mark/
+static/models/shizuku/
+static/models/Takodachi/
+static/audio/*
+messages.db
+settings_gd.json
+testjson.py
