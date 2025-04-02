@@ -4,12 +4,12 @@ MO is a fun and interactive chatbot designed to simulate a conversation with a c
 
 ## Features
 
-*   **Interactive Chat:** Engage in dynamic conversations with Aki.
-*   **Anime Girl Persona:** Aki embodies the personality of a cute anime girl, complete with playful teasing.
-*   **Voice Synthesis:** Hear Aki's responses through voice synthesis (either Edge TTS or Coqui TTS).
+*   **Interactive Chat:** Engage in dynamic conversations with MO.
+*   **Anime Girl Persona:** MO embodies the personality of a cute anime girl, complete with playful teasing.
+*   **Voice Synthesis:** Hear MO's responses through voice synthesis (either Edge TTS or Coqui TTS).
 *   **Markdown Support:** Responses are formatted using Markdown for enhanced readability.
 *   **Conversation History:** The chatbot remembers recent interactions, providing context for ongoing conversations.
-*   **Customizable:** Easily modify Aki's personality and behavior by changing the system prompt.
+*   **Customizable:** Easily modify MO's personality and behavior by changing the system prompt.
 * **Local LLM:** Use local LLM(ollama)
 
 ## Technologies Used
