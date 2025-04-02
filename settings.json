@@ -3,7 +3,7 @@
         "provider": "local",
         "model": "gemma3:latest",
         "apiKey": "",
-        "serverIp": "192.168.219.104",
+        "serverIp": "127.0.0.1",
         "serverPort": "11434"
     },
     "tts": {
