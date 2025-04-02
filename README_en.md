@@ -1,6 +1,6 @@
-# Aki: A Cute Anime Girl Chatbot
+# MO: A Cute Anime Girl Chatbot
 
-Aki is a fun and interactive chatbot designed to simulate a conversation with a cute anime girl. She's programmed to be playful and occasionally tease the user, adding a unique personality to the interaction. This project utilizes a combination of technologies, including OpenAI's language models, edge-tts or coqui-tts for voice synthesis, and a Flask-based web interface.
+MO is a fun and interactive chatbot designed to simulate a conversation with a cute anime girl. This project utilizes a combination of technologies, including OpenAI's language models, edge-tts or coqui-tts for voice synthesis, and a Flask-based web interface.
 
 ## Features
 
@@ -130,10 +130,6 @@ Using a virtual environment is highly recommended to avoid conflicts with other 
 *   **Error loading model:** If you encounter an error loading the Coqui TTS model, ensure that you have a stable internet connection and that the model name is correct.
 *   **Ollama not running:** Make sure you have run `ollama serve` in your terminal.
 * **Ollama model not found:** Make sure you have run `ollama pull gemma3` in your terminal.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributing
 
